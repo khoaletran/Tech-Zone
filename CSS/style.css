@@ -1,0 +1,262 @@
+  *{
+    font-family: Arial, sans-serif;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Đầu Trang */
+
+  .top-header {
+    background-color: #2186d8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 40px;
+    margin-right: 15px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-btn {
+    background-color: #2186d8;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: 50px;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: #2186d8;
+  }
+
+
+  .dropdown-menu a:hover {
+    color: #4bb4de;
+  }
+
+  .menu-container:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-category ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  .right ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .login-btn {
+    background-color: #579cd4;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+  }
+
+  /* Phần Tính năng nav  */
+  .sub-header {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+
+  .sub-header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .sub-header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Phần hình ảnh quảng cáo */
+  .img_demo{
+    display: flex;
+    justify-self: center;
+    margin: 10px;
+  }
+  .img_demo img{
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  /* Dòng flash sale  */
+
+  .FlashSale{
+    display: flex;
+    flex-direction: column;
+    background-color: #d2f4ff;
+    margin: 1%;
+    margin-top: 2%;
+    border-radius: 12px;
+    border: 2px solid gray;
+  }
+  .FlashSale .title_FS{
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #47b7fc;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .FlashSale h4 {
+    color: #ffee12;
+    align-self: center;
+    animation: blink 0.8s infinite;
+    margin-left: 30px;
+  }
+  .FlashSale a{
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  .FlashSale a:hover{
+    color: yellow;
+    transform: scale(1.2);
+  }
+  
+
+  /* Ô sản phẩm */
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+  }
+  .product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .product-card:hover {
+    transform: scale(1.02);
+  }
+  .product-card img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .product-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .price {
+    color: red;
+    font-weight: bold;
+  }
+
+/* Modal cua san pham */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: red;
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Zone</title>
+    <link rel="stylesheet" href="../CSS/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../CSS/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <header class="top-header">
+        <div class="left">
+        <img src="../IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle menu-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Danh mục
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Laptop</a></li>
+            <li><a class="dropdown-item" href="#">PC</a></li>
+            </ul>
+        </div>
+        <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
+                <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
+            </ul>
+    </header>
+
+    <nav class="sub-header">
+        <ul>
+            <li><a href="#"><i class="fas fa-tags"></i> Tự Build PC theo ý của bạn</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Tin công nghệ</a></li>
+            <li><a href="#"><i class="fas fa-tools"></i> Dịch vụ sửa chữa</a></li>
+            <li><a href="#"><i class="fas fa-laptop-house"></i> Dịch vụ kỹ thuật tại nhà</a></li>
+            <li><a href="#"><i class="fas fa-sync-alt"></i> Thu cũ đổi mới</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Tra cứu bảo hành</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="img_demo">
+            <img src="../IMG/Banner/demo1.png" alt="" srcset="">
+            <img src="../IMG/Banner/DemoBanner.png" alt="demo">
+            <img src="../IMG/Banner/demo2.png" alt="" srcset="">
+        </div>
+
+        <div class="FlashSale">
+            <div class="title_FS">
+                <div class="advertisement">
+                    <h4>🔥 Flash Sale Khủng! Mua ngay để nhận ưu đãi hấp dẫn 🔥</h4>
+                </div>
+                <a href="#">Xem Chi Tiết</a>
+            </div>
+            <div class="product-container">
+                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', '../IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
+                    <img src="../IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                    <div class="price">50.990.000đ</div>
+                </div>
+
+                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', '../IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
+                    <img src="../IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                    <div class="price">50.990.000đ</div>
+                </div>
+
+                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', '../IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
+                    <img src="../IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                    <div class="price">50.990.000đ</div>
+                </div>
+
+                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', '../IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
+                    <img src="../IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                    <div class="price">50.990.000đ</div>
+                </div>
+
+                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', '../IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
+                    <img src="../IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                    <div class="price">50.990.000đ</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" style="width: 100%; border-radius: 6px;">
+        <h3 id="modalName"></h3>
+        <p id="modalSpecs"></p>
+        <p style="color:red; font-weight:bold" id="modalPrice"></p>
+        </div>
+    </div>
+
+</body>
+</html>
