@@ -1,5 +1,3 @@
-# Write the README content to a file
-readme_content = """
 # TechZone - Website Bán PC & Laptop
 
 **Mô tả:**
@@ -14,32 +12,33 @@ TechZone là một website bán hàng trực tuyến chuyên cung cấp các s�
 ## Thành Viên Nhóm
 
 - **Nhóm Trưởng:** Trần Lê Khoa (Chịu trách nhiệm chính về HTML, CSS, JavaScript)
+- **Thành Viên:** Huỳnh Nhật Trường (Chịu trách nhiệm về nội dung cho website)
+
+## Trường Học
+
+- **Đại học Công nghiệp Thành phố Hồ Chí Minh - IUH**
 
 ---
 
 ## Các Tính Năng Chính
 
-- **Trang Chủ:** Hiển thị các sản phẩm nổi bật, chương trình khuyến mãi và flash sale.
-- **Giỏ Hàng:** Người dùng có thể thêm, sửa, xóa sản phẩm trong giỏ hàng và tiến hành thanh toán.
-- **Đăng Nhập/Đăng Ký:** Tính năng cho phép người dùng đăng nhập và đăng ký tài khoản.
-- **Modal Chi Tiết Sản Phẩm:** Hiển thị thông tin chi tiết khi người dùng click vào sản phẩm.
-- **Responsive:** Giao diện web được tối ưu cho cả desktop và mobile.
+- **Trang Chủ** 🏠: Hiển thị các sản phẩm nổi bật, chương trình khuyến mãi và flash sale.
+- **Giỏ Hàng** 🛒: Người dùng có thể thêm, sửa, xóa sản phẩm trong giỏ hàng và tiến hành thanh toán.
+- **Đăng Nhập/Đăng Ký** 🔑: Tính năng cho phép người dùng đăng nhập và đăng ký tài khoản.
+- **Modal Chi Tiết Sản Phẩm** 🔍: Hiển thị thông tin chi tiết khi người dùng click vào sản phẩm.
+- **Responsive** 📱💻: Giao diện web được tối ưu cho cả desktop và mobile.
 
 ---
 
 ## Công Nghệ Sử Dụng
 
-- **HTML5:** Cấu trúc cơ bản của website.
-- **CSS3:** Thiết kế giao diện và phong cách cho trang web.
-- **JavaScript:** Thực hiện các chức năng tương tác như giỏ hàng, modal chi tiết sản phẩm.
-- **Bootstrap:** Thư viện hỗ trợ responsive và giao diện đẹp mắt.
-- **SwiperJS:** Thư viện tạo các slide sản phẩm.
+- **HTML5** 🌐: Cấu trúc cơ bản của website.
+- **CSS3** 🎨: Thiết kế giao diện và phong cách cho trang web.
+- **JavaScript** ⚡: Thực hiện các chức năng tương tác như giỏ hàng, modal chi tiết sản phẩm.
+- **Bootstrap** 🖥️: Thư viện hỗ trợ responsive và giao diện đẹp mắt.
+- **SwiperJS** 🖱️: Thư viện tạo các slide sản phẩm.
 
 ---
 
-## Cài Đặt và Sử Dụng
+## Link Trang Web 
 
-1. **Clone repository:**
-
-```bash
-git clone https://github.com/your-username/techzone.git
