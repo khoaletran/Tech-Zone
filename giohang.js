@@ -46,6 +46,7 @@ function renderCart() {
                 cart[index].quantity = value;
                 localStorage.setItem('cart', JSON.stringify(cart));
                 renderCart();
+                updateCart();
             }
         });
     });
@@ -56,8 +57,22 @@ function renderCart() {
             cart.splice(index, 1);
             localStorage.setItem('cart', JSON.stringify(cart));
             renderCart();
+            updateCart();
         });
     });
+    
 }
 
-window.onload = renderCart;
+window.onload = function() {
+    renderCart();
+    updateCart();
+};
+
+function updateCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const btnTT = document.querySelector('.btn-checkout'); 
+    if (btnTT) {
+        btnTT.style.display = cart.length > 0 ? 'block' : 'none';
+    }
+}
+

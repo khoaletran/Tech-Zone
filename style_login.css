@@ -173,6 +173,12 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #FFFFFF;
+    color: #2186d8;
+    border: 1px solid #2186d8;
+}
+
 button:active {
     transform: scale(0.95);
 }
@@ -182,8 +188,14 @@ button:focus {
 }
 
 button.ghost {
-    background-color: transparent;
+    background-color: white;
+    color: #2186d8;
     border-color: #FFFFFF;
+}
+
+button.ghost:hover {
+    background-color: #2186d8;
+    color: white;
 }
 
 form {
@@ -341,7 +353,7 @@ input {
 
 /* CSS cho nút Quay Về Trang Chủ */
 .back-home-btn {
-    margin: 30px auto 30px auto;
+    margin: 20px auto 0px auto;
     display: block;
     padding: 12px 24px;
     background-color: #ff4b2b;
@@ -367,6 +379,7 @@ input {
     border-top: 1px solid #ddd;
     width: 100%;
     margin-top: 2%;
+    height: auto;
 }
 
 .footer-container {
@@ -422,3 +435,15 @@ input {
 .social-icons a:hover {
     color: #007bff;
 }
+
+.fa-facebook:hover{
+    color: #0866fe;
+  }
+  
+  .fa-youtube:hover{
+    color: red;
+  }
+  
+  .fa-tiktok:hover{
+    color: black;
+  }
