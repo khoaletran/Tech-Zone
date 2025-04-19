@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In/Up Form</title>
-    <link rel="stylesheet" href="style_login.css">
+    <title>Giỏ Hàng - TechZone</title>
+    <link rel="stylesheet" href="../Tech-Zone/bootstrap.min.css">
+    <link rel="stylesheet" href="../Tech-Zone/style_index.css">
+    <link rel="stylesheet" href="../Tech-Zone/style_GioHang.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="IMG/Main/Logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="header">
         <header class="top-header">
             <div class="left">
-            <a href="index.html">
-                <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
-            </a>
-            <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+                <a href="index.html">
+                    <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+                </a>
+                <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
             </div>
             <div class="right">
                 <ul>
                     <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
                     <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
-                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart cart"></i> Giỏ hàng</a></li>
                     <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
                 </ul>
+            </div>
         </header>
 
         <nav class="sub-header">
@@ -37,56 +41,25 @@
             </ul>
         </nav>
     </div>
-    <section>
-        <div class="container" id="container">
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Tạo tài khoản</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>hoặc sử dụng email để đăng ký</span>
-                    <input type="text" placeholder="Họ và tên" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <button>Đăng ký</button>
-                </form>
-            </div>
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Đăng nhập</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>hoặc sử dụng tài khoản của bạn</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <a href="#">Quên mật khẩu?</a>
-                    <button>Đăng nhập</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Chào mừng trở lại!</h1>
-                        <p>Để kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
-                        <button class="ghost" id="signIn">Đăng nhập</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Xin chào, bạn mới!</h1>
-                        <p>Hãy nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
-                        <button class="ghost" id="signUp">Đăng ký</button>
-                    </div>
-                </div>
+
+    <!-- NỘI DUNG GIỎ HÀNG -->
+     <section>
+        <div class="text-center mt-3">
+            <a href="index.html" class="back-home-btn"> <i class="fas fa-home"></i>  Trang Chủ</a>
+        </div>
+        <div class="container cart-container">
+            <h2 class="text-center mb-4">🛒 Giỏ Hàng Của Bạn</h2>
+            <div id="cartItems"></div>
+        
+            <div class="text-end mt-4">
+                <div id="cartTotal" class="fs-4 fw-bold mb-3"></div>
+                <button id="checkoutBtn" class="btn btn-checkout">Thanh Toán Ngay</button>
             </div>
         </div>
-        <button class="back-home-btn" onclick="location.href='index.html'">Quay Về Trang Chủ</button>
-    </section>
+     </section>
+    
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -136,18 +109,6 @@
         </div>
     </footer>
 
-    <script>
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
-
-        signUpButton.addEventListener('click', () => {
-            container.classList.add('right-panel-active');
-        });
-
-        signInButton.addEventListener('click', () => {
-            container.classList.remove('right-panel-active');
-        });
-    </script>
+    <script src="giohang.js"></script>
 </body>
 </html>
