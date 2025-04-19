@@ -4,108 +4,401 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Zone</title>
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="jquery-3.7.1.js"></script>
-    <script src="main.js"></script>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../Tech-Zone/bootstrap.min.css">
+    <link rel="stylesheet" href="../Tech-Zone/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../Tech-Zone/main.js"></script>
+    <script src="../Tech-Zone/bootstrap.bundle.js"></script>
+
 </head>
 <body>
-    <header class="top-header">
-        <div class="left">
-        <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
-        <div class="dropdown">
-            <button class="btn dropdown-toggle menu-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            Danh mục
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Laptop</a></li>
-            <li><a class="dropdown-item" href="#">PC</a></li>
-            </ul>
-        </div>
-        <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
-        </div>
-        <div class="right">
+    <div class="overlay" id="overlay"></div>
+    <div class="header">
+        <header class="top-header">
+            <div class="left">
+            <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            <div class="dropdown">
+                <button class="btn menu-btn" type="button" onclick="focusMenu()">Danh mục</button>
+            </div>
+            <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                    <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
+                </ul>
+        </header>
+
+        <nav class="sub-header">
             <ul>
-                <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
-                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
-                <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
-                <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i> Tự Build PC theo ý của bạn</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Tin công nghệ</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Dịch vụ sửa chữa</a></li>
+                <li><a href="#"><i class="fas fa-laptop-house"></i> Dịch vụ kỹ thuật tại nhà</a></li>
+                <li><a href="#"><i class="fas fa-sync-alt"></i> Thu cũ đổi mới</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i> Tra cứu bảo hành</a></li>
             </ul>
-    </header>
-
-    <nav class="sub-header">
-        <ul>
-            <li><a href="#"><i class="fas fa-tags"></i> Tự Build PC theo ý của bạn</a></li>
-            <li><a href="#"><i class="fas fa-newspaper"></i> Tin công nghệ</a></li>
-            <li><a href="#"><i class="fas fa-tools"></i> Dịch vụ sửa chữa</a></li>
-            <li><a href="#"><i class="fas fa-laptop-house"></i> Dịch vụ kỹ thuật tại nhà</a></li>
-            <li><a href="#"><i class="fas fa-sync-alt"></i> Thu cũ đổi mới</a></li>
-            <li><a href="#"><i class="fas fa-shield-alt"></i> Tra cứu bảo hành</a></li>
-        </ul>
-    </nav>
-
+        </nav>
+    </div>
+    
     <section>
-        <div class="img_demo">
-            <img src="IMG/Banner/demo1.png" alt="" srcset="">
-            <img src="IMG/Banner/DemoBanner.png" alt="demo">
-            <img src="IMG/Banner/demo2.png" alt="" srcset="">
-        </div>
+        <div class="container py-4">
+            <div class="row gx-3 d-flex align-items-stretch">
 
-        <div class="FlashSale">
-            <div class="title_FS">
-                <div class="advertisement">
-                    <h4>🔥 Flash Sale Khủng! Mua ngay để nhận ưu đãi hấp dẫn 🔥</h4>
-                </div>
-                <a href="#">Xem Chi Tiết</a>
-            </div>
-            <div class="product-container">
-                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', 'IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
-                    <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
-                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
-                    <div class="price">50.990.000đ</div>
-                </div>
+                <nav class="menu col-md-2 p-3 shadow-sm bg-white rounded">
+                    <h4 class="text-primary mb-3 text-center">Danh Mục</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">💻 Laptop</a></li>
+                        <li class="list-group-item"><a href="#">🖥️ PC</a></li>
+                        <li class="list-group-item"><a href="#">🛠️ Dịch vụ & thông tin khác</a></li>
+                    </ul>
+                </nav>
+                <div class="col-md-8">
+                    <div class="swiper shadow-sm rounded overflow-hidden h-100">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="IMG/Banner/demo3.png" alt="demo" class="img-fluid w-100">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="IMG/Banner/demo4.png" alt="demo" class="img-fluid w-100">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="IMG/Banner/demo5.png" alt="demo" class="img-fluid w-100">
+                            </div>
+                        </div>
 
-                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', 'IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
-                    <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
-                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
-                    <div class="price">50.990.000đ</div>
-                </div>
-
-                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', 'IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
-                    <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
-                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
-                    <div class="price">50.990.000đ</div>
-                </div>
-
-                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', 'IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
-                    <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
-                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
-                    <div class="price">50.990.000đ</div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                 </div>
 
-                <div class="product-card" onclick="showModal('Laptop ASUS ROG Zephyrus G14', 'IMG/items/zephyrus_g14.webp', 'i5-13500H • 16GB • 512GB • 14','50.990.000đ')">
-                    <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
-                    <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
-                    <div class="price">50.990.000đ</div>
+                <div class="col-md-2">
+                    <img src="IMG/Banner/demo1.png" alt="Demo Image" class="img-fluid rounded shadow-sm" style="max-height: 100%;">
                 </div>
-
             </div>
         </div>
-    </section>
+    <div class="img-left">
+        <img src="../Tech-Zone/IMG/Banner/demo7.png">
+    </div>
 
-    <!-- Modal -->
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" src="" style="width: 100%; border-radius: 6px;">
-        <h3 id="modalName"></h3>
-        <p id="modalSpecs"></p>
-        <p style="color:red; font-weight:bold" id="modalPrice"></p>
+    <div class="img-right">
+        <img src="../Tech-Zone/IMG/Banner/demo6.png">
+    </div>
+
+    <div class="FlashSale">
+        <div class="title_FS">
+            <div class="advertisement">
+                <h4>🔥 Flash Sale Khủng!  🔥</h4>
+            </div>
+            <a href="#">Xem Chi Tiết</a>
+        </div>
+        <div class="product-container-sales">
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
         </div>
     </div>
 
+    <div class="FlashSale">
+        <div class="title_FS">
+            <div class="advertisement">
+                <h4>🔥 Flash Sale Khủng! PC Giảm Sâu 🔥</h4>
+            </div>
+            <a href="#">Xem Chi Tiết</a>
+        </div>
+        <div class="product-container-sales">
+             <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+            
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+        </div>
+    </div>
+    <img src="../Tech-Zone/IMG/Banner/demo8.png"  style="width: 100%;">
+
+    <div class="Banner">
+        <div class="title_FS">
+            <div class="advertisement">
+                <h4>🖥️ PC bán chạy 🔥 | Trả góp 0% </h4>
+            </div>
+            <a href="#">Xem Chi Tiết</a>
+        </div>
+        <div class="product-container-sales">
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+            
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Banner">
+        <div class="title_FS">
+            <div class="advertisement">
+                <h4>🖥️ LapTop Bán Chạy 🔥 | Trả góp 0% </h4>
+            </div>
+            <a href="#">Xem Chi Tiết</a>
+        </div>
+        <div class="product-container-sales">
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+            
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+
+            <div class="product-card" onclick="showModal('1')">
+                <img src="IMG/items/zephyrus_g14.webp" alt="Laptop 1">
+                <div class="product-name">Laptop ASUS ROG Zephyrus G14</div>
+                <div class="price">50.990.000đ</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Modal -->
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <div class="modal-images">
+                        <img id="modalImage" src="" alt="Product Image" style="width: 100%; border-radius: 6px;">
+                    </div>
+                    <div class="modal-info">
+                        <h3 id="modalName"></h3>
+                        <p class="modal-rating">0.0 ★ <a href="#">Xem đánh giá</a></p>
+                        <p class="modal-price">
+                            <span id="modalPrice" class="price-discounted"></span>
+                            <span id="modalOriginalPrice" class="price-original"></span>
+                            <span id="modalDiscount" class="discount-tag"></span>
+                        </p>
+                        <div class="modal-promo">
+                            <p>Quà tặng khuyến mãi</p>
+                            <ul id="modalPromo">
+                            </ul>
+                        </div>
+                        <div class="modal-policies">
+                            <p>Mua ngay</p>
+                            <ul id="modalPolicies">
+                            </ul>
+                        </div>
+                        <div class="modal-gift">
+                            <p>Quà tặng:</p>
+                            <ul id="modalGift">
+                            </ul>
+                        </div>
+                        <div class="modal-support">
+                            <p>Hỗ trợ trả góp MPOS (Thẻ tín dụng), HDSAISON</p>
+                        </div>
+                        <div class="modal-offers">
+                            <p>Khuyến mãi</p>
+                            <ul id="modalOffers">
+                            </ul>
+                        </div>
+                        <button class="add-to-cart-btn">Thêm Vào Giỏ Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Về TechZone</h4>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Chính sách</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Thông tin</h4>
+                <ul>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                    <li><a href="#">Hướng dẫn trả góp</a></li>
+                    <li><a href="#">Tra cứu địa chỉ bảo hành</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Tổng đài hỗ trợ (8:00 - 21:00)</h4>
+                <ul>
+                    <li>Mua hàng: <a href="tel:19005301">1900.5301</a></li>
+                    <li>Bảo hành: <a href="tel:19005325">1900.5325</a></li>
+                    <li>Kiếu nại: <a href="tel:18006173">1800.6173</a></li>
+                    <li>Email: <a href="mailto:cskh@gearvn.com">cskh@gearvn.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kết nối với chúng tôi</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-zalo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
