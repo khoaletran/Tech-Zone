@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Zone</title>
+    <title>TechZone</title>
     <link rel="stylesheet" href="../Tech-Zone/bootstrap.min.css">
-    <link rel="stylesheet" href="../Tech-Zone/style.css">
+    <link rel="stylesheet" href="../Tech-Zone/style_index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="../Tech-Zone/main.js"></script>
-    <script src="../Tech-Zone/bootstrap.bundle.js"></script>
-
+    <link rel="icon" href="IMG/Main/Logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="overlay" id="overlay"></div>
     <div class="header">
         <header class="top-header">
             <div class="left">
-            <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            <a href="index.html">
+                <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            </a>
             <div class="dropdown">
                 <button class="btn menu-btn" type="button" onclick="focusMenu()">Danh mục</button>
             </div>
@@ -29,7 +29,7 @@
                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
                     <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
                     <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
-                    <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
+                    <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
                 </ul>
         </header>
 
@@ -51,9 +51,10 @@
 
                 <nav class="menu col-md-2 p-3 shadow-sm bg-white rounded">
                     <h4 class="text-primary mb-3 text-center">Danh Mục</h4>
+                    <hr>
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">💻 Laptop</a></li>
-                        <li class="list-group-item"><a href="#">🖥️ PC</a></li>
+                        <li class="list-group-item"><a href="Laptop.html">💻 Laptop</a></li>
+                        <li class="list-group-item"><a href="pc.html">🖥️ PC</a></li>
                         <li class="list-group-item"><a href="#">🛠️ Dịch vụ & thông tin khác</a></li>
                     </ul>
                 </nav>
@@ -94,7 +95,7 @@
     <div class="FlashSale">
         <div class="title_FS">
             <div class="advertisement">
-                <h4>🔥 Flash Sale Khủng!  🔥</h4>
+                <h4>🔥 Flash Sale Khủng! Lap Sale Top🔥</h4>
             </div>
             <a href="#">Xem Chi Tiết</a>
         </div>
@@ -303,7 +304,6 @@
 
 
     <!-- Modal -->
-
     <div id="productModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">×</span>
@@ -320,11 +320,6 @@
                             <span id="modalOriginalPrice" class="price-original"></span>
                             <span id="modalDiscount" class="discount-tag"></span>
                         </p>
-                        <div class="modal-promo">
-                            <p>Quà tặng khuyến mãi</p>
-                            <ul id="modalPromo">
-                            </ul>
-                        </div>
                         <div class="modal-policies">
                             <p>Mua ngay</p>
                             <ul id="modalPolicies">
@@ -337,11 +332,6 @@
                         </div>
                         <div class="modal-support">
                             <p>Hỗ trợ trả góp MPOS (Thẻ tín dụng), HDSAISON</p>
-                        </div>
-                        <div class="modal-offers">
-                            <p>Khuyến mãi</p>
-                            <ul id="modalOffers">
-                            </ul>
                         </div>
                         <button class="add-to-cart-btn">Thêm Vào Giỏ Hàng</button>
                     </div>
@@ -381,10 +371,10 @@
             <div class="footer-column">
                 <h4>Tổng đài hỗ trợ (8:00 - 21:00)</h4>
                 <ul>
-                    <li>Mua hàng: <a href="tel:19005301">1900.5301</a></li>
-                    <li>Bảo hành: <a href="tel:19005325">1900.5325</a></li>
-                    <li>Kiếu nại: <a href="tel:18006173">1800.6173</a></li>
-                    <li>Email: <a href="mailto:cskh@gearvn.com">cskh@gearvn.com</a></li>
+                    <li>Mua hàng: <a href="tel:19001009">1900.1009</a></li>
+                    <li>Bảo hành: <a href="tel:19001900">1900.1900</a></li>
+                    <li>Kiếu nại: <a href="tel:18001800">1800.1800</a></li>
+                    <li>Email: <a href="mailto:cskh@TechZone.com">cskh@TechZone.com</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -400,5 +390,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Tech-Zone/main.js"></script>
+    <script src="../Tech-Zone/bootstrap.bundle.js"></script>
 </body>
 </html>

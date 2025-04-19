@@ -6,9 +6,7 @@
         "price": "50.990.000đ",
         "originalPrice": "60.990.000đ",
         "discount": "10%",
-        "promos": [],
         "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
-        "gift": [],
-        "offers": []
+        "gift": ["Balo ASUS ROG"]
     }
 ]

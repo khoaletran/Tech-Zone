@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up Form</title>
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <header class="top-header">
+            <div class="left">
+            <a href="index.html">
+                <img src="IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            </a>
+            <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                    <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
+                </ul>
+        </header>
+
+        <nav class="sub-header">
+            <ul>
+                <li><a href="#"><i class="fas fa-tags"></i> Tự Build PC theo ý của bạn</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Tin công nghệ</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Dịch vụ sửa chữa</a></li>
+                <li><a href="#"><i class="fas fa-laptop-house"></i> Dịch vụ kỹ thuật tại nhà</a></li>
+                <li><a href="#"><i class="fas fa-sync-alt"></i> Thu cũ đổi mới</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i> Tra cứu bảo hành</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Tạo tài khoản</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>hoặc sử dụng email để đăng ký</span>
+                    <input type="text" placeholder="Họ và tên" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <button>Đăng ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Đăng nhập</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>hoặc sử dụng tài khoản của bạn</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <a href="#">Quên mật khẩu?</a>
+                    <button>Đăng nhập</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào mừng trở lại!</h1>
+                        <p>Để kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                        <button class="ghost" id="signIn">Đăng nhập</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Xin chào, bạn mới!</h1>
+                        <p>Hãy nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+                        <button class="ghost" id="signUp">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="back-home-btn" onclick="location.href='index.html'">Quay Về Trang Chủ</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Về TechZone</h4>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Chính sách</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Thông tin</h4>
+                <ul>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                    <li><a href="#">Hướng dẫn trả góp</a></li>
+                    <li><a href="#">Tra cứu địa chỉ bảo hành</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Tổng đài hỗ trợ (8:00 - 21:00)</h4>
+                <ul>
+                    <li>Mua hàng: <a href="tel:19001009">1900.1009</a></li>
+                    <li>Bảo hành: <a href="tel:19001900">1900.1900</a></li>
+                    <li>Kiếu nại: <a href="tel:18001800">1800.1800</a></li>
+                    <li>Email: <a href="mailto:cskh@TechZone.com">cskh@TechZone.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kết nối với chúng tôi</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-zalo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+    </script>
+</body>
+</html>

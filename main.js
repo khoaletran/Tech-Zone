@@ -1,7 +1,6 @@
-function showModal(name, image, specs, price) {
+function showModal(name, image, price) {
     document.getElementById('modalName').textContent = name;
     document.getElementById('modalImage').src = image;
-    document.getElementById('modalSpecs').textContent = specs;
     document.getElementById('modalPrice').textContent = price;
     document.getElementById('productModal').style.display = 'block';
 }
@@ -34,15 +33,6 @@ async function showModal(productId) {
     document.getElementById('modalImage').src = product.image;
 
 
-    const promoList = document.getElementById('modalPromo');
-    promoList.innerHTML = '';
-    (product.promos || []).forEach(promo => {
-        const li = document.createElement('li');
-        li.textContent = promo;
-        promoList.appendChild(li);
-    });
-
-
     const policyList = document.getElementById('modalPolicies');
     policyList.innerHTML = '';
     (product.policies || []).forEach(policy => {
@@ -59,15 +49,6 @@ async function showModal(productId) {
         li.textContent = giftItem;
         giftList.appendChild(li);
     });
-
-    const offerList = document.getElementById('modalOffers');
-    offerList.innerHTML = '';
-    (product.offers || []).forEach(offer => {
-        const li = document.createElement('li');
-        li.textContent = offer;
-        offerList.appendChild(li);
-    });
-
 
     document.getElementById('productModal').style.display = 'block';
 }
@@ -116,6 +97,7 @@ const productSwiper = new Swiper('.productSwiper', {
     });
 });
 
+// Tập trung và cuộn lên danh mục
 function focusMenu() {
     const menubtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
@@ -134,5 +116,9 @@ function focusMenu() {
     }, 1000);
 }
 
+// Khi load trang, cuộn lên đầu trang
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
 
   
