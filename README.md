@@ -42,3 +42,4 @@ TechZone là một website bán hàng trực tuyến chuyên cung cấp các s�
 
 ## Link Trang Web 
 
+- https://khoaletran.github.io/Tech-Zone/index.html
