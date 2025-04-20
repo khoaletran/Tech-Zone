@@ -14,7 +14,6 @@ window.addEventListener('load', updateCartIcon);
 
 document.querySelectorAll('.add-to-cart-btn').forEach(button => {
     button.addEventListener('click', function() {
-        // Lấy thông tin sản phẩm từ modal
         const product = {
             id: document.getElementById('modalName').textContent,
             name: document.getElementById('modalName').textContent,
@@ -22,8 +21,6 @@ document.querySelectorAll('.add-to-cart-btn').forEach(button => {
             price: document.getElementById('modalPrice').textContent,
             quantity: 1
         };
-
-        // Kiểm tra và thêm sản phẩm vào giỏ hàng
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         const existingProduct = cart.find(p => p.id === product.id);

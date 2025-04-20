@@ -8,7 +8,7 @@ function showModal(name, image, price) {
 
 async function fetchProductById(productId) {
     try {
-        const response = await fetch('sanpham.txt');
+        const response = await fetch('../sanpham.txt');
         const data = await response.text();
         const products = JSON.parse(data);
         return products.find(product => product.id === productId); 
