@@ -367,6 +367,7 @@ input {
 }
 
 .back-home-btn:hover {
+    color: #fff;
     background-color: #ff3a1a;
     transform: scale(1.05);
 }
