@@ -10,6 +10,9 @@
   border-radius: 10px;
   margin: 10px;
 }
+.container{
+  width: 80%;
+}
 
 .back-home-btn {
   text-decoration: none;
