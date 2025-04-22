@@ -38,8 +38,3 @@ TechZone là một website bán hàng trực tuyến chuyên cung cấp các s�
 - **Bootstrap** 🖥️: Thư viện hỗ trợ responsive và giao diện đẹp mắt.
 - **SwiperJS** 🖱️: Thư viện tạo các slide sản phẩm.
 
----
-
-## Link Trang Web 
-
-- https://khoaletran.github.io/Tech-Zone/index.html
