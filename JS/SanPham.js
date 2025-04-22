@@ -32,7 +32,6 @@ document.querySelectorAll('.add-to-cart-btn').forEach(button => {
 
         
         localStorage.setItem('cart', JSON.stringify(cart));
-        alert("Đã thêm vào giỏ hàng!");
         closeModal();
         updateCartIcon();
     });
