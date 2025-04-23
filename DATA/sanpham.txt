@@ -7,6 +7,336 @@
         "originalPrice": "60.990.000đ",
         "discount": "10%",
         "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
-        "gift": ["Balo ASUS ROG"]
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "2",
+        "name": "Laptop gaming ASUS ROG Flow Z13 GZ302EA RU080WS",
+        "image": "../IMG/items/2_ROgflow.webp",
+        "price": "45.891.000đ",
+        "originalPrice": "50.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "3",
+        "name": "Laptop gaming ASUS ROG Strix G17 G713RW LL178W",
+        "image": "../IMG/items/3_RogStrixG17.webp",
+        "price": "50.990.000đ",
+        "originalPrice": "60.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "4",
+        "name": "Laptop gaming ASUS ROG Strix SCAR 18 G835LW SA172W",
+        "image": "../IMG/items/4_rogStrixScar18(2025).webp",
+        "price": "108.891.000đ",
+        "originalPrice": "120.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "5",
+        "name": "Laptop gaming ASUS TUF Gaming F15 FX507ZC4 HN095W",
+        "image": "../IMG/items/5_tuff15.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "6",
+        "name": "Laptop gaming ASUS Vivobook 16X K3605ZC RP564W",
+        "image": "../IMG/items/6_GamingASUS Vivobook16X.webp",
+        "price": "27.891.000đ",
+        "originalPrice": "30.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "7",
+        "name": "Laptop ASUS Vivobook S 16 OLED S5606MA MX051W",
+        "image": "../IMG/items/7_AsusVivobook S16.webp",
+        "price": "30.591.000đ",
+        "originalPrice": "33.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "8",
+        "name": "Laptop gaming ASUS Vivobook 16X K3605ZC RP564W",
+        "image": "../IMG/items/8_asusVivobook.webp",
+        "price": "32.391.000đ",
+        "originalPrice": "35.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+{
+        "id": "9",
+        "name": "Laptop ASUS ExpertBook P1 P1403CVA I5SE16 50W",
+        "image": "../IMG/items/9_AsusExpertBook.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "10",
+        "name": "Laptop gaming Dell Alienware M15 R6 P109F001CBL",
+        "image": "../IMG/items/10_Del allianware.webp",
+        "price": "50.990.000đ",
+        "originalPrice": "60.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "11",
+        "name": "Laptop gaming Dell G15 5525",
+        "image": "../IMG/items/11_DellgamingG155525.webp",
+          "price": "32.391.000đ",
+        "originalPrice": "35.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "12",
+        "name": "Laptop gaming Dell G15 5530",
+        "image": "../IMG/items/12_DellgamingG155530.webp",
+        "price": "35.091.000đ",
+        "originalPrice": "38.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "13",
+        "name": "Laptop Dell Inspiron 14 7420 1YT85",
+        "image": "../IMG/items/13_DellInspiron147420.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "14",
+        "name": "Laptop Dell Vostro 3430 71011900",
+        "image": "../IMG/items/14_DellVostro3430.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "15",
+        "name": "Laptop Dell XPS 13 Plus 71013325",
+        "image": "../IMG/items/15_DellXPS13Plus.webp",
+        "price": "45.891.000đ",
+        "originalPrice": "50.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "16",
+        "name": "Laptop gaming Acer Aspire 7 A715 76G 5806",
+        "image": "../IMG/items/16_Acerasprice7.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+    {
+        "id": "17",
+        "name": "Laptop gaming Acer Predator Triton 500 SE PT516 52S 75E3",
+        "image": "../IMG/items/17_AcerPredatorTriton.webp",
+        "price": "32.391.000đ",
+        "originalPrice": "35.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "18",
+        "name": "Laptop gaming Gigabyte G5 MF E2VN333SH",
+        "image": "../IMG/items/18_GigabyteG5.webp",
+        "price": "32.391.000đ",
+        "originalPrice": "35.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "19",
+        "name": "Laptop HP Pavilion 15 EG0506TX 46M05PA",
+        "image": "../IMG/items/19_HPPavilion15.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "20",
+        "name": "Laptop MSI Alpha 15 B5EEK 205VN",
+        "image": "../IMG/items/20_MSIAlpha15.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+    {
+        "id": "21",
+        "name": "PC TZ AMD R5",
+        "image": "../IMG/items/21_AMDR5.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "22",
+        "name": "PC TZ ASUS BACK TO FUTURE",
+        "image": "../IMG/items/22_AsusBacktoFuture.webp",
+        "price": "32.391.000đ",
+        "originalPrice": "35.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "23",
+        "name": "PC TZ CORSAIR ICUE",
+        "image": "../IMG/items/23_CorsairiCUE.webp",
+        "price": "50.990.000đ",
+        "originalPrice": "60.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "24",
+        "name": "PC TZ GIGABYTE RECY",
+        "image": "../IMG/items/24_GigabyteRecy.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "25",
+        "name": "PC TZ GAMING APOLLO",
+        "image": "../IMG/items/25_GmingApollo.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "26",
+        "name": "PC TZ MSI PROJECT HERO",
+        "image": "../IMG/items/26_MSIProjectZero.webp",
+        "price": "27.891.000đ",
+        "originalPrice": "30.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "27",
+        "name": "PC TZ MSI VENTUS",
+        "image": "../IMG/items/27_MSIVentus.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "28",
+        "name": "PC TZ AORUS XTREME ICE",
+        "image": "../IMG/items/28_PCAORUSXTREMEICE.webp",
+        "price": "27.891.000đ",
+        "originalPrice": "30.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+{
+        "id": "29",
+        "name": "PC TZ GAMING HONE",
+        "image":"../IMG/items/29_PCGamingHone.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "30",
+        "name": "PC TZ GAMING R7",
+        "image": "../IMG/items/30_PCGamingR7.webp",
+        "price": "30.591.000đ",
+        "originalPrice": "33.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "31",
+        "name": "PC TZ HOMEWORD I5",
+        "image": "../IMG/items/31_PCHomewordi5.webp",
+        "price": "11.690.000đ",
+        "originalPrice": "12.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "32",
+        "name": "PC TZ HOMEWORD I3",
+        "image": "../IMG/items/32_PCHomeworki3.webp",
+        "price": "9.891.000đ",
+        "originalPrice": "10.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+     {
+        "id": "33",
+        "name": "PC TZ JINX",
+        "image": "../IMG/items/33_StartJinx2.webp",
+        "price": "18.891.000đ",
+        "originalPrice": "20.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
+    },
+        {
+        "id": "34",
+        "name": "PC TZ TEEMO",
+        "image": "../IMG/items/34_StartTeemo.webp",
+        "price": "17.091.000đ",
+        "originalPrice": "18.990.000đ",
+        "discount": "10%",
+        "policies": ["Bảo hành chính hãng 12 tháng.", "Hỗ trợ đổi mới trong 15 ngày."],
+        "gift": ["Balo Gaming"," Chuột Gaming","Tai Nghe","Voucher 500k"]
     }
 ]
