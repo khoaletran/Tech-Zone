@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ Hàng - TechZone</title>
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/style_index.css">
-    <link rel="stylesheet" href="../CSS/style_GioHang.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Giới Thiệu - TechZone</title>
+    <link rel="stylesheet" href="../CSS/style_login.css">
+    <link rel="stylesheet" href="../CSS/style_GioiThieu.css">
     <link rel="icon" href="../IMG/Main/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
         <header class="top-header">
             <div class="left">
-                <a href="../HTML/index.html">
-                    <img src="../IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
-                </a>
-                <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+            <a href="index.html">
+                <img src="../IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            </a>
+            <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
             </div>
             <div class="right">
                 <ul>
@@ -25,10 +29,9 @@
                     <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
                     <li><a href="TraCuuDonHang.html"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
-                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart cart"></i> Giỏ hàng</a></li>
+                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
                     <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
                 </ul>
-            </div>
         </header>
 
         <nav class="sub-header">
@@ -42,27 +45,25 @@
             </ul>
         </nav>
     </div>
+    <section class="team-section">
+        <h2 class="team-title">Thành viên nhóm</h2>
+        <div class="team-container">
+            <a href="https://www.facebook.com/khoa.le.tran21" target="_blank" class="member-card">
+                <img src="../IMG/Main/khoa.png" alt="Trần Lê Khoa" class="member-photo">
+                <h3>Trần Lê Khoa</h3>
+                <h4>MSSV : 23701071</h4>
+                <p>Lớp: DHKTPM19A</p>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100038754600646" target="_blank" class="member-card" >
+                <img src="../IMG/Main/truong.png" alt="Huỳnh Nhật Trường" class="member-photo">
+                <h3>Huỳnh Nhật Trường</h3>
+                <h4>MSSV : 23700751</h4>
+                <p>Lớp: DHHTTT19A</p>
+            </a>
+        </div>
+        <button class="back-home-btn" onclick="location.href='index.html'">Quay Về Trang Chủ</button>
+    </section>
 
-    <!-- NỘI DUNG GIỎ HÀNG -->
-    <div class="content-wrapper">
-        <section>
-            <div class="text-center mt-3">
-                <a href="index.html" class="back-home-btn"> <i class="fas fa-home"></i> Trang Chủ</a>
-            </div>
-            <div class="container cart-container">
-                <h2 class="text-center mb-4">🛒 Giỏ Hàng Của Bạn</h2>
-                <div id="cartItems"></div>
-
-                <div class="text-end mt-4">
-                    <div id="cartTotal" class="fs-4 fw-bold mb-3"></div>
-                    <button id="checkoutBtn" class="btn btn-checkout">Thanh Toán Ngay</button>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -111,7 +112,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="../JS/giohang.js"></script>
 </body>
 </html>

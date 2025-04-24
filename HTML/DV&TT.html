@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ Hàng - TechZone</title>
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/style_index.css">
-    <link rel="stylesheet" href="../CSS/style_GioHang.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Giới Thiệu - TechZone</title>
+    <link rel="stylesheet" href="../CSS/style_login.css">
     <link rel="icon" href="../IMG/Main/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .service-info {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    }
+
+    .service-info .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-info h2, .service-info h3, .service-info h4 {
+        color: #2186d8;
+        margin-bottom: 10px;
+    }
+
+    .service-info p, .service-info li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .service-info ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-info .banner-img {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    </style>
 </head>
 <body>
     <div class="header">
         <header class="top-header">
             <div class="left">
-                <a href="../HTML/index.html">
-                    <img src="../IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
-                </a>
-                <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
+            <a href="index.html">
+                <img src="../IMG/Main/Logo.png" alt="Logo_TechZone" class="logo">
+            </a>
+            <input type="text" placeholder="Bạn cần tìm gì?" class="search-box">
             </div>
             <div class="right">
                 <ul>
@@ -25,10 +62,9 @@
                     <li><a href="#"><i class="fas fa-headset"></i> Hotline <strong>1234.5678</strong></a></li>
                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> Showroom</a></li>
                     <li><a href="TraCuuDonHang.html"><i class="fas fa-truck"></i> Tra cứu đơn hàng</a></li>
-                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart cart"></i> Giỏ hàng</a></li>
+                    <li><a href="GioHang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
                     <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a></li>
                 </ul>
-            </div>
         </header>
 
         <nav class="sub-header">
@@ -42,27 +78,36 @@
             </ul>
         </nav>
     </div>
-
-    <!-- NỘI DUNG GIỎ HÀNG -->
-    <div class="content-wrapper">
-        <section>
-            <div class="text-center mt-3">
-                <a href="index.html" class="back-home-btn"> <i class="fas fa-home"></i> Trang Chủ</a>
-            </div>
-            <div class="container cart-container">
-                <h2 class="text-center mb-4">🛒 Giỏ Hàng Của Bạn</h2>
-                <div id="cartItems"></div>
-
-                <div class="text-end mt-4">
-                    <div id="cartTotal" class="fs-4 fw-bold mb-3"></div>
-                    <button id="checkoutBtn" class="btn btn-checkout">Thanh Toán Ngay</button>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section class="service-info">
+        <div class="container">
+            <h2>TechZone hợp tác cùng ALD Service cung cấp dịch vụ kỹ thuật tại nhà</h2>
+            <img src="../IMG/Banner/thong-bao-hop-tac-gearvn-nese.png" alt="TechZone hợp tác ALD" class="banner-img">
+            <p>TechZone vui mừng thông báo về sự hợp tác với ALD Service – đội ngũ chuyên nghiệp cung cấp các dịch vụ kỹ thuật tận nơi. Giúp khách hàng tiết kiệm thời gian, chi phí và nhận hỗ trợ kỹ thuật nhanh chóng, hiệu quả tại nhà.</p>
     
+            <h3>DỊCH VỤ LẺ - BẠN GỌI - CHÚNG TÔI ĐẾN</h3>
+            <ul>
+                <li>Dịch vụ bảo trì máy tính</li>
+                <li>Dịch vụ lắp ráp máy tính</li>
+                <li>Dịch vụ vệ sinh máy tính</li>
+                <li>Dịch vụ vệ sinh ghế gaming</li>
+                <li>Dịch vụ cân bằng màu màn hình</li>
+            </ul>
+    
+            <h3>COMBO DỊCH VỤ – LỰA CHỌN TIẾT KIỆM HƠN</h3>
+            <p><strong>Combo 1:</strong> Gói Chăm Sóc Tiết Kiệm – 579.000đ (Tiết kiệm 121.000đ)</p>
+            <p><strong>Combo 2:</strong> Gói Chăm Sóc Toàn Diện – 679.000đ (Tiết kiệm 321.000đ)</p>
+    
+            <h4>Khu vực áp dụng:</h4>
+            <p>TP. Hồ Chí Minh</p>
+    
+            <h4>Liên hệ đặt lịch:</h4>
+            <p>Hotline: <strong>0947.266.276</strong></p>
+            <p>Yêu cầu dịch vụ: <a href="#">Click tại đây</a></p>
+        </div>
+        <button class="back-home-btn" onclick="location.href='index.html'">Quay Về Trang Chủ</button>
+    </section>
 
-    <!-- FOOTER -->
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -111,7 +156,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="../JS/giohang.js"></script>
 </body>
 </html>
