@@ -6,12 +6,14 @@ function renderCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartContainer = document.getElementById('cartItems');
     const totalDiv = document.getElementById('cartTotal');
+    const originalTotal = document.getElementById('originalTotal');
     cartContainer.innerHTML = '';
     let total = 0;
 
     if (cart.length === 0) {
         cartContainer.innerHTML = `<p class="text-center">🛒 Giỏ hàng của bạn đang trống.</p>`;
         totalDiv.textContent = '';
+        originalTotal.textContent = '';
         return;
     }
 
@@ -36,7 +38,15 @@ function renderCart() {
         cartContainer.appendChild(div);
     });
 
-    totalDiv.innerHTML = `Tổng cộng: ${formatCurrency(total)}`;
+    if (appliedDiscount > 0) {
+        const discounted = total - total * appliedDiscount;
+        originalTotal.textContent = `Giá gốc: ${formatCurrency(total)}`;
+        totalDiv.innerHTML = `Giá sau giảm: ${formatCurrency(discounted)}`;
+    } else {
+        document.getElementById('originalTotal').textContent = '';
+        totalDiv.innerHTML = `Tổng cộng: ${formatCurrency(total)}`;
+    }
+    
 
     document.querySelectorAll('.quantity-input').forEach(input => {
         input.addEventListener('change', (e) => {
@@ -63,6 +73,21 @@ function renderCart() {
     
 }
 
+let appliedDiscount = 0;
+
+document.getElementById('applyDiscount').addEventListener('click', function () {
+    const code = document.getElementById('discountCode').value.trim().toUpperCase();
+    if (code === 'TECHZONE10D') {
+        appliedDiscount = 0.10;
+    } else {
+        appliedDiscount = 0;
+        alert('Mã giảm giá không hợp lệ hoặc đã hết hạn!');
+    }
+    renderCart();
+    updateCart();
+});
+
+
 window.onload = function() {
     renderCart();
     updateCart();
@@ -70,9 +95,19 @@ window.onload = function() {
 
 function updateCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const btnTT = document.querySelector('.btn-checkout'); 
-    if (btnTT) {
-        btnTT.style.display = cart.length > 0 ? 'block' : 'none';
+    const btnTT = document.getElementById('checkoutBtn'); 
+    const discountCode = document.getElementById('discountCode');
+    const applyDiscount = document.getElementById('applyDiscount');
+    
+
+    if (cart.length > 0) {
+        btnTT.style.display = 'block';
+        discountCode.style.display = 'block';
+        applyDiscount.style.display = 'block';
+    } else {
+        btnTT.style.display = 'none';
+        discountCode.style.display = 'none';
+        applyDiscount.style.display = 'none';
     }
 }
 

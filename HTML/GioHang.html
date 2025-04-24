@@ -54,7 +54,14 @@
                 <div id="cartItems"></div>
 
                 <div class="text-end mt-4">
-                    <div id="cartTotal" class="fs-4 fw-bold mb-3"></div>
+                    <div id="originalTotal" class="text-end text-decoration-line-through text-muted"></div>
+                    <div id="cartTotal" class="fs-4 fw-bold text-end text-danger mb-2"></div>
+
+                    <div class="input-group mb-3" id="voucher">
+                        <input type="text" id="discountCode" class="form-control" placeholder="Mã Giảm Giá (Mã: TECHZONE10D)">
+                        <button id="applyDiscount" class="btn btn-outline-primary">Áp Dụng</button>
+                    </div>
+
                     <button id="checkoutBtn" class="btn btn-checkout">Thanh Toán Ngay</button>
                 </div>
             </div>
